@@ -1,0 +1,9 @@
+List<String>fontList=[
+  'Young',
+  'Satisfy',
+  'Bebas',
+  'Black',
+  'Dancing',
+  'Gloria',
+  'Roboto',
+];
