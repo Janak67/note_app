@@ -51,36 +51,40 @@ class _EditScreenState extends State<EditScreen> {
                 ],
               ),
               Expanded(
-                  child: ListView(
-                children: [
-                  TextField(
-                    textAlign: txtAlign,
-                    controller: txtTitle,
-                    style: TextStyle(
-                        color: backgroundColors[fontcolor],
-                        fontSize: _value,
-                        fontStyle: italic ? FontStyle.italic : FontStyle.normal,
-                        fontWeight: bold ? FontWeight.bold : FontWeight.normal,
-                        fontFamily: fontList[fontStyle]),
-                    decoration: const InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Title',
-                        hintStyle: TextStyle(color: Colors.white)),
-                  ),
-                  TextField(
-                    controller: txtContent,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: bold ? FontWeight.normal : FontWeight.bold),
-                    maxLines: null,
-                    decoration: const InputDecoration(
-                        border: InputBorder.none,
-                        hintText: 'Type Something here',
-                        hintStyle: TextStyle(color: Colors.grey)),
-                  ),
-                ],
-              )),
+                child: ListView(
+                  children: [
+                    TextField(
+                      textAlign: txtAlign,
+                      controller: txtTitle,
+                      style: TextStyle(
+                          color: backgroundColors[fontcolor],
+                          fontSize: _value,
+                          fontStyle:
+                              italic ? FontStyle.italic : FontStyle.normal,
+                          fontWeight:
+                              bold ? FontWeight.bold : FontWeight.normal,
+                          fontFamily: fontList[fontStyle]),
+                      decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Title',
+                          hintStyle: TextStyle(color: Colors.white)),
+                    ),
+                    TextField(
+                      controller: txtContent,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight:
+                              bold ? FontWeight.normal : FontWeight.bold),
+                      maxLines: null,
+                      decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Type Something here',
+                          hintStyle: TextStyle(color: Colors.grey)),
+                    ),
+                  ],
+                ),
+              ),
               Container(
                 margin: const EdgeInsets.all(10),
                 height: MediaQuery.of(context).size.height * 0.2,
